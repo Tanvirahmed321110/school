@@ -23,3 +23,23 @@ allQuesAns.forEach(each =>{
         }
     })
 })
+
+
+
+
+
+// responsive nav
+const navItems = document.querySelector('.nav-items');
+const menuBtn = document.getElementById('open-menu-btn');
+const closeBtn = document.getElementById('close-menu-btn');
+
+menuBtn.addEventListener('click',()=>{
+    navItems.classList.add("active");
+    menuBtn.style.display = 'none';
+    closeBtn.style.display = 'block'
+})
+closeBtn.addEventListener('click',()=>{
+    navItems.classList.remove("active");
+    menuBtn.style.display = 'block';
+    closeBtn.style.display = 'none'
+})

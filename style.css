@@ -17,7 +17,7 @@
     
     --container-width-lg: 80%;
     --container-width-md: 90%;
-    --container-width-sm: 96%;
+    --container-width-sm: 94%;
     
     --low-font: 12px;
     --xs-font: 13px;
@@ -283,4 +283,42 @@ main{
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+
+
+@media screen and (max-width:991px){
+    :root{
+        --low-font: 12px;
+        --xs-font: 13px;
+        --sm-font: 14px;
+        --md-font: 16px;
+        --lg-font: 18px;
+        --xl-font: 17px;
+        --xxl-font: 19px;
+        --3xl-font: 25px;
+        --4xl-font: 30px;
+    }
+    .container{
+        width: var(--container-width-md);
+    }
+}
+
+
+@media screen and (max-width:580px){
+    :root{
+        --low-font: 12px;
+        --xs-font: 13px;
+        --sm-font: 14px;
+        --md-font: 15px;
+        --lg-font: 16px;
+        --xl-font: 17px;
+        --xxl-font: 18px;
+        --3xl-font: 20px;
+        --4xl-font: 25px; 
+    }
+    
+    
+    .container{
+        width: var(--container-width-sm) ;
+    }
 }
