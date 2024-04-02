@@ -1,0 +1,97 @@
+
+
+
+.contact-area{
+    background-color: var(--bg-color-1);
+    padding: 50px;
+    border-radius: var(--radius-lg);
+    display: grid;
+    grid-template-columns: 38% 57%;
+    gap: 5%;
+    height: 400px;
+    margin: 80px 0;
+}
+
+
+
+
+
+/* contact card */
+.contact-card{
+    position: relative;
+    background-color: var(--primary-color);
+    border-radius: var(--radius-lg);
+    padding: 25px;
+    bottom: 120px;
+}
+.contact-card .social li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--bg-color-1);
+    font-size: var(--lg-font);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.contact-card .social li:hover{
+    transform: rotate(360deg);
+}
+
+.contact form input,
+.contact-form textarea{
+    background-color: var(--bg-color);
+    box-shadow: unset;
+    outline: none;
+    border: none;
+    padding: 12px;
+    color: var(--light-color);
+}
+.contact-form textarea{
+    height: 130px;
+    resize: none;
+}
+
+
+@media screen and (max-width:1040px){
+    .contact-area{
+        height: auto;
+        gap: 3%;
+        padding: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-card{
+        bottom: 0px;
+    }
+    
+    .contact-card .social li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-width:769px){
+    .contact-area{
+        height: auto;
+        gap: 50px;
+        grid-template-columns: 1fr;
+        margin: 25px 0;
+    }
+    .contact-card{
+        bottom: 0px;
+    }
+    
+    .contact-card .social li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+    }
+}
